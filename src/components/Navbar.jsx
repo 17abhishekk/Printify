@@ -123,7 +123,7 @@ const Navbar = () => {
       </button>
 
       {isMenuOpen && (
-        <ul className="navbar-menu fixed inset-0 bg-green-500 z-100 shadow-md md:hidden flex flex-col p-4 font-semibold text-sm text-black">
+        <ul className="navbar-menu fixed inset-0 bg-black-500 z-100 shadow-md md:hidden flex flex-col p-4 font-semibold text-sm text-black">
           <li className="py-2 hover:bg-green-600 cursor-pointer">Catalog</li>
           <li className="py-2 hover:bg-green-600 cursor-pointer" onClick={toggleHowItWorks}>How it works</li>
           <li className="py-2 hover:bg-green-600 cursor-pointer" onClick={toggleServices}>Services</li>
