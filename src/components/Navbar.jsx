@@ -56,9 +56,9 @@ const Navbar = () => {
       </a>
 
       <button onClick={toggleMenu} className="hamburger flex flex-col justify-between h-6 w-8 md:hidden">
-        <span className="block w-8 h-1 bg-black"></span>
-        <span className="block w-8 h-1 bg-black"></span>
-        <span className="block w-8 h-1 bg-black"></span>
+        <span className="block w-8 h-1 bg-green-500"></span>
+        <span className="block w-8 h-1 bg-green-500"></span>
+        <span className="block w-8 h-1 bg-green-500"></span>
       </button>
 
       <ul className="hidden md:flex items-center gap-12 font-semibold text-base">
@@ -121,15 +121,16 @@ const Navbar = () => {
       <button className="bg-green-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-600 transition-all">
         Sign up
       </button>
+
       {isMenuOpen && (
-        <ul className="navbar-menu fixed inset-0 bg-white z-50 shadow-md md:hidden flex flex-col p-4 font-semibold text-sm">
-          <li className="py-2 hover:bg-gray-100 cursor-pointer">Catalog</li>
-          <li className="py-2 hover:bg-gray-100 cursor-pointer" onClick={toggleHowItWorks}>How it works</li>
-          <li className="py-2 hover:bg-gray-100 cursor-pointer" onClick={toggleServices}>Services</li>
-          <li className="py-2 hover:bg-gray-100 cursor-pointer" onClick={toggleUseCases}>Use-cases</li>
-          <li className="py-2 hover:bg-gray-100 cursor-pointer" onClick={toggleNeedHelp}>Need help?</li>
-          <li className="py-2 hover:bg-gray-100 cursor-pointer">Pricing</li>
-          <li className="py-2 hover:bg-gray-100 cursor-pointer">Blog</li>
+        <ul className="navbar-menu fixed inset-0 bg-green-500 z-100 shadow-md md:hidden flex flex-col p-4 font-semibold text-sm text-black">
+          <li className="py-2 hover:bg-green-600 cursor-pointer">Catalog</li>
+          <li className="py-2 hover:bg-green-600 cursor-pointer" onClick={toggleHowItWorks}>How it works</li>
+          <li className="py-2 hover:bg-green-600 cursor-pointer" onClick={toggleServices}>Services</li>
+          <li className="py-2 hover:bg-green-600 cursor-pointer" onClick={toggleUseCases}>Use-cases</li>
+          <li className="py-2 hover:bg-green-600 cursor-pointer" onClick={toggleNeedHelp}>Need help?</li>
+          <li className="py-2 hover:bg-green-600 cursor-pointer">Pricing</li>
+          <li className="py-2 hover:bg-green-600 cursor-pointer">Blog</li>
         </ul>
       )}
     </header>
